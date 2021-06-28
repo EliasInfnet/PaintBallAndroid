@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack1"
+    tools:context=".CriarEventoActivity">
+
+    <Button
+        android:id="@+id/btn_criar_evento_to_home"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+    <TextView
+        android:id="@+id/Crie_seu_evento_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorBack1"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:layout_toEndOf="@id/btn_criar_evento_to_home"
+        android:fontFamily="sans-serif-light"
+        android:text="Crie seu evento"
+        android:textColor="@android:color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_nome_evento_criar_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Nome"
+        android:layout_below="@id/Crie_seu_evento_toolbar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_nome_evento_criar"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_nome_evento_criar_edt"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="25dp"
+        android:maxLength="25"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/edt_txt_format2"
+        />
+
+    <TextView
+        android:id="@+id/txt_local_evento_criar_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Local"
+        android:layout_below="@id/edt_nome_evento_criar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_local_evento_criar"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_local_evento_criar_edt"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="25dp"
+        android:maxLength="25"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/edt_txt_format2"
+        />
+
+    <TextView
+        android:id="@+id/txt_descricao_evento_criar_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Descrição"
+        android:layout_below="@id/edt_local_evento_criar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginStart="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_descricao_evento_criar"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_descricao_evento_criar_edt"
+        android:inputType="textMultiLine"
+        android:paddingHorizontal="25dp"
+        android:maxLength="80"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/edt_txt_format2"
+        />
+
+    <TextView
+        android:id="@+id/txt_data_evento_criar_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Data"
+        android:layout_below="@id/edt_descricao_evento_criar"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginStart="80dp"
+        />
+
+    <EditText
+        android:id="@+id/edt_data_evento_criar"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_data_evento_criar_edt"
+        android:inputType="date"
+        android:paddingHorizontal="25dp"
+        android:maxLength="80"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/edt_txt_format2"
+        />
+
+    <TextView
+        android:id="@+id/txt_horario_evento_criar_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Horario"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/edt_data_evento_criar"
+        android:layout_below="@id/edt_descricao_evento_criar"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-light"
+        />
+
+    <EditText
+        android:id="@+id/edt_horario_evento_criar"
+        android:layout_marginTop="5dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/edt_data_evento_criar"
+        android:layout_below="@+id/txt_horario_evento_criar_edt"
+        android:inputType="time"
+        android:gravity="center"
+        android:paddingHorizontal="25dp"
+        android:maxLength="80"
+        android:fontFamily="sans-serif-light"
+        android:textSize="18sp"
+        android:paddingVertical="10dp"
+        android:background="@drawable/edt_txt_format2"
+        />
+
+    <Button
+        android:id="@+id/btn_criarEvento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_data_evento_criar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="Criar"
+        android:background="@drawable/btn_shape1"
+        android:padding="15dp"/>
+
+
+
+
+</RelativeLayout>

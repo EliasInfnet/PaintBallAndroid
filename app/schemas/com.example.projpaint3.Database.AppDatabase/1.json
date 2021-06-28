@@ -1,0 +1,106 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "db78ba270b2d9e1df4932ba2ed4f1863",
+    "entities": [
+      {
+        "tableName": "Usuario",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `nome` TEXT NOT NULL, `senha` TEXT NOT NULL, `email` TEXT NOT NULL, `nivel` INTEGER NOT NULL, `localidade` TEXT, `sobre` TEXT, `icone` INTEGER, `telefone` TEXT, `partidas_ganhas` INTEGER, `partidas_perdidas` INTEGER, `meu_evento` TEXT, `participante_eventos` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nome",
+            "columnName": "nome",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "senha",
+            "columnName": "senha",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nivel",
+            "columnName": "nivel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localidade",
+            "columnName": "localidade",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sobre",
+            "columnName": "sobre",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icone",
+            "columnName": "icone",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telefone",
+            "columnName": "telefone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "partidas_ganhas",
+            "columnName": "partidas_ganhas",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "partidas_perdidas",
+            "columnName": "partidas_perdidas",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "meu_evento",
+            "columnName": "meu_evento",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "participante_eventos",
+            "columnName": "participante_eventos",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'db78ba270b2d9e1df4932ba2ed4f1863')"
+    ]
+  }
+}

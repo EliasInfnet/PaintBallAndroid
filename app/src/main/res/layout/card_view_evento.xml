@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_width="130dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rlt_lyo_titulo_evento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_shape2"
+        >
+
+        <TextView
+            android:id="@+id/evento_nome_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Usina 2.0"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:id="@+id/evento_local_txt"
+            android:layout_marginBottom="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/colorLight"
+            android:text="Usina"
+            android:gravity="center"
+            android:layout_below="@+id/evento_nome_txt"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/back_evento_2"
+        android:layout_height="110sp"
+        android:layout_below="@id/rlt_lyo_titulo_evento"
+        >
+
+        <TextView
+            android:id="@+id/data_txt"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Data : "
+            />
+
+        <TextView
+            android:id="@+id/data_evento_txt"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/data_txt"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="27/05"
+            />
+
+        <TextView
+            android:id="@+id/txt_inicio_evento_home"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@+id/data_txt"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Inicio :"
+            />
+
+        <TextView
+            android:id="@+id/horario_evento_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/txt_inicio_evento_home"
+            android:layout_below="@id/data_evento_txt"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:text="12:00"
+            />
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="140dp"-->
+<!--            android:layout_height="90dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/participantes_totais_txt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_alignParentTop="true"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:text="Participantes"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:textSize="16sp"-->
+<!--                android:gravity="center"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/participantes_evento_txt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_below="@+id/participantes_totais_txt"-->
+<!--                android:text="5"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="40sp"-->
+<!--                android:gravity="center"-->
+<!--                />-->
+
+<!--        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

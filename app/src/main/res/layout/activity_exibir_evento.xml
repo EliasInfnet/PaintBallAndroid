@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack1"
+    tools:context=".ExibirEventoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/divisoria_perfil_saldo"
+                android:layout_marginTop="68dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:src="@drawable/p_saldo_shape_perfil"/>
+
+            <TextView
+                android:id="@+id/txt_nome_evento_exibir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBack1"
+                android:text="Nome evento"
+                android:paddingHorizontal="15dp"
+                android:textSize="40sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textColor="@android:color/white"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_lyo_local_evento_exibir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/txt_nome_evento_exibir"
+                >
+
+                <TextView
+                    android:id="@+id/txt_localTxt_evento_exibir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Local : "
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_local_evento_exibir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="Paint da Udasdasdsina"
+                    android:textSize="20sp"
+                    android:layout_toEndOf="@id/txt_localTxt_evento_exibir"
+                    android:fontFamily="sans-serif-light"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_dados_evento_exibir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlt_lyo_local_evento_exibir">
+
+                <RelativeLayout
+                    android:id="@+id/rlt_lyo_dados_evento1"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <RelativeLayout
+                        android:id="@+id/rlt_host_evento_exibir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_below="@+id/rlt_lyo_data_evento_exibir"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_hostTxt_evento_exibir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Host : "
+                            android:layout_centerVertical="true"
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-light"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_host_evento_exibir"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="Julio93"
+                            android:textSize="20sp"
+                            android:layout_toEndOf="@id/txt_hostTxt_evento_exibir"
+                            android:fontFamily="sans-serif-light"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlt_lyo_data_evento_exibir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_dataTxt_evento_exibir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Data : "
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-light"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_data_evento_exibir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="27/09"
+                            android:textSize="20sp"
+                            android:layout_toEndOf="@id/txt_dataTxt_evento_exibir"
+                            android:fontFamily="sans-serif-light"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rlt_lyo_horario_evento_exibir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/rlt_host_evento_exibir"
+                        android:layout_alignStart="@+id/rlt_host_evento_exibir"
+                        android:layout_marginTop="15dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/txt_horarioTxt_evento_exibir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Inicio : "
+                            android:textSize="20sp"
+                            android:fontFamily="sans-serif-light"
+                            />
+
+                        <TextView
+                            android:id="@+id/txt_horario_evento_exibir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/white"
+                            android:text="14:00"
+                            android:textSize="20sp"
+                            android:layout_toEndOf="@id/txt_horarioTxt_evento_exibir"
+                            android:fontFamily="sans-serif-light"/>
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@id/rlt_lyo_dados_evento1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@id/rlt_lyo_dados_evento1">
+
+                    <TextView
+                        android:id="@+id/txt_descricao_evento_exibir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="doaksodasdoasdaosdkpasdoaspdasodmapsdmadmaposdamd"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rlt_times_evento_exibir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rlt_dados_evento_exibir"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                >
+
+                <TextView
+                    android:id="@+id/timeA_txt_evento_exibir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/rcy_timeA_evento_exibir"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="TimeA"
+                    android:textSize="30dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcy_timeA_evento_exibir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="10dp"
+                    android:isScrollContainer="false"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/timeA_txt_evento_exibir"
+                    />
+
+                <TextView
+                    android:id="@+id/timeB_txt_evento_exibir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="TimeB"
+                    android:textSize="30sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcy_timeB_evento_exibir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/timeB_txt_evento_exibir"
+                    android:layout_alignStart="@id/timeB_txt_evento_exibir"
+                    />
+
+                <Button
+                    android:id="@+id/btnEntrarTimeA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrar no time A"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_below="@+id/rcy_timeA_evento_exibir"
+                    android:background="@drawable/btn_time_a"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <Button
+                    android:id="@+id/btnEntrarTimeB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entrar no time B"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:paddingHorizontal="10dp"
+                    android:layout_below="@+id/rcy_timeB_evento_exibir"
+                    android:background="@drawable/btn_time_b"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+            <Button
+                android:id="@+id/btn_voltar_evento_exibir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Voltar"
+                android:padding="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginVertical="30dp"
+                android:layout_below="@id/rlt_times_evento_exibir"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_app"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.example.projpaint3.FragmentsApp.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.projpaint3.FragmentsApp.HomeFragment"
+        android:label="fragment_evento"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/meusEventosFragment"
+        android:name="com.example.projpaint3.FragmentsApp.MeusEventosFragment"
+        android:label="fragment_meus_eventos"
+        tools:layout="@layout/fragment_meus_eventos" />
+</navigation>

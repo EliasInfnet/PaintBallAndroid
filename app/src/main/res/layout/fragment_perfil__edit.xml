@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBack1"
+    tools:context=".FragmentsApp.Perfil.Perfil_EditFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlt_lyo_edt_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <Button
+                    android:id="@+id/btn_edit_to_home_perfil"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/perfil_edit_toolbar_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@id/btn_edit_to_home_perfil"
+                    android:background="@color/colorBack1"
+                    android:gravity="center_vertical"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Edite seu perfil"
+                    android:textColor="@android:color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/escolha_seu_avatar_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/colorBack1"
+                android:gravity="center"
+                android:fontFamily="sans-serif-light"
+                android:text="Escolha seu avatar"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rlt_lyo_edt_perfil_ft_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ft_selected_edit_perfil"
+                    android:src="@drawable/avatar_1"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toEndOf="@+id/ft_edt_perfil_1"
+                    android:src="@drawable/avatar_2" />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toEndOf="@+id/ft_edt_perfil_2"
+                    android:src="@drawable/avatar_3" />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_toEndOf="@id/ft_edt_perfil_3"
+                    android:src="@drawable/avatar_4" />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_5"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_2"
+                    android:layout_toEndOf="@id/ft_edt_perfil_5"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_6"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_3"
+                    android:layout_toEndOf="@id/ft_edt_perfil_6"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_7"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_4"
+                    android:layout_toEndOf="@id/ft_edt_perfil_7"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_8"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_9"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_5"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_9"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_10"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_6"
+                    android:layout_toEndOf="@id/ft_edt_perfil_9"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_10"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_11"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_7"
+                    android:layout_toEndOf="@id/ft_edt_perfil_10"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_11"
+                    />
+
+                <ImageView
+                    android:id="@+id/ft_edt_perfil_12"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@id/ft_edt_perfil_8"
+                    android:layout_toEndOf="@id/ft_edt_perfil_11"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/avatar_12"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_nome_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Nome"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="50dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_nome_perfil"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:maxLength="18"
+                android:paddingHorizontal="25dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:background="@drawable/edt_txt_format2"
+                />
+
+<!--            <TextView-->
+<!--                android:id="@+id/txt_senha_edt"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="Senha"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/edt_seha_perfil"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginHorizontal="40dp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:maxLength="18"-->
+<!--                android:paddingHorizontal="25dp"-->
+<!--                android:inputType="textPassword"-->
+<!--                android:fontFamily="sans-serif-light"-->
+<!--                android:text=""-->
+<!--                android:background="@drawable/edt_txt_format2"-->
+<!--                />-->
+
+
+
+            <TextView
+                android:id="@+id/txt_localidade_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Localidade (opcional) "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="50dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_localidade_perfil"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingHorizontal="25dp"
+                android:inputType="text"
+                android:maxLength="25"
+                android:fontFamily="sans-serif-light"
+                android:hint=""
+                android:background="@drawable/edt_txt_format2"
+                />
+
+            <TextView
+                android:id="@+id/txt_telefone_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Telefone (opcional)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="50dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_telefone_perfil"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingHorizontal="25dp"
+                android:inputType="phone"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:background="@drawable/edt_txt_format2"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="50dp"
+                android:text="Como você se considera?"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <LinearLayout
+                android:id="@+id/rlt_lyo_nivel_perfil_edt"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                >
+
+                <TextView
+                    android:id="@+id/amador_txt_perfil_edt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ft_selected_edit_perfil"
+                    android:hint="1"
+                    android:text="Amador"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/intermediario_txt_perfil_edt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/perfil_icon_back"
+                    android:text="Intermediario"
+                    android:textColor="@android:color/white"
+                    android:hint="2"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/avancado_txt_perfil_edt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/perfil_icon_back"
+                    android:text="Experiente"
+                    android:textColor="@android:color/white"
+                    android:hint="3"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_sobre_perfil_edt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Sobre (opcional)"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginStart="50dp"
+                />
+
+            <EditText
+                android:id="@+id/edt_sobre_perfil"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="10dp"
+                android:gravity="start"
+                android:maxLength="90"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edt_txt_format2"
+                />
+
+            <Button
+                android:id="@+id/btn_confirmar_edt_perfil"
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/btn_shape1"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:text="Salvar"
+                android:textSize="15dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

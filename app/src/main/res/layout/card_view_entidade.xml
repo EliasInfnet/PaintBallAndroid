@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_card_local"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rlt_lyo_entidade_icon_rcy"
+        android:layout_marginVertical="10dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/back_white_real"
+        >
+
+        <ImageView
+            android:id="@+id/entidade_icon_rcy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:src="@drawable/avatar_2"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_titulo_entidade_rcy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/rlt_lyo_entidade_icon_rcy"/>
+
+    <TextView
+        android:id="@+id/sub_titulo_entidade_rcy"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Sub_titulo"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txt_titulo_entidade_rcy"
+        android:layout_toEndOf="@+id/rlt_lyo_entidade_icon_rcy"/>
+
+
+
+</RelativeLayout>

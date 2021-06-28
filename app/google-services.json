@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "222248990510",
+    "firebase_url": "https://projectpaintball.firebaseio.com",
+    "project_id": "projectpaintball",
+    "storage_bucket": "projectpaintball.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222248990510:android:fe07ea5111b03e42dcecbf",
+        "android_client_info": {
+          "package_name": "com.example.projpaint3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222248990510-3pr4nl8pek3ah8rk3pi95duqd03hbulc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projpaint3",
+            "certificate_hash": "d79950e90a453d80ac42a0c34316f722a9cd96a0"
+          }
+        },
+        {
+          "client_id": "222248990510-3vldahgp7qer0caiagtshml50o2iji4u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQgLWZigRheb04gT20fgvNUtLqjQ2CHCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222248990510-3vldahgp7qer0caiagtshml50o2iji4u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
